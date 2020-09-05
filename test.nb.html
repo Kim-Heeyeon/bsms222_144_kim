@@ -1775,6 +1775,9 @@ c &lt;- -1</code></pre>
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYVxuYGBgIn0= -->
 <pre class="r"><code>a</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDFcbiJ9 -->
+<pre><code>[1] 1</code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p><br> A more explicit way to ask R to show us the value stored in <code>a</code> is using <code>print</code> like this:</p>
@@ -1783,6 +1786,9 @@ c &lt;- -1</code></pre>
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucHJpbnQoYSlcbmBgYCJ9 -->
 <pre class="r"><code>print(a)</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDFcbiJ9 -->
+<pre><code>[1] 1</code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p><br> We use the term <em>object</em> to describe stuff that is stored in R. Variables are examples, but objects can also be more complicated entities such as functions, which are described later.</p>
@@ -1795,6 +1801,12 @@ c &lt;- -1</code></pre>
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubHMoKVxuYGBgIn0= -->
 <pre class="r"><code>ls()</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiIFsxXSBcImFcIiAgICAgICAgICBcImJcIiAgICAgICAgICBcImNcIiAgICAgICAgICBcImNvZGVzXCIgICAgICBcImNvdW50cnlcIiAgIFxuIFs2XSBcIm1hdFwiICAgICAgICBcIm11cmRlcnNcIiAgICBcIm5cIiAgICAgICAgICBcInBvcFwiICAgICAgICBcInJlY29yZFwiICAgIFxuWzExXSBcInJlY29yZDJcIiAgICBcInJlZ2lvblwiICAgICBcInNvbHV0aW9uXzFcIiBcInNvbHV0aW9uXzJcIiBcInZhbHVlXCIgICAgIFxuWzE2XSBcInhcIiAgICAgICAgICBcInpcIiAgICAgICAgIFxuIn0= -->
+<pre><code> [1] &quot;a&quot;          &quot;b&quot;          &quot;c&quot;          &quot;codes&quot;      &quot;country&quot;   
+ [6] &quot;mat&quot;        &quot;murders&quot;    &quot;n&quot;          &quot;pop&quot;        &quot;record&quot;    
+[11] &quot;record2&quot;    &quot;region&quot;     &quot;solution_1&quot; &quot;solution_2&quot; &quot;value&quot;     
+[16] &quot;x&quot;          &quot;z&quot;         </code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p><br> In RStudio, the <em>Environment</em> tab shows the values:</p>
@@ -1802,10 +1814,18 @@ c &lt;- -1</code></pre>
 <p>Now since these values are saved in variables, to obtain a solution to our equation, we use the quadratic formula:</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuKC1iICsgc3FydChiXjIgLSA0KmEqYykpIC8gKDIqYSlcbigtYiAtIHNxcnQoYl4yIC0gNCphKmMpKSAvICgyKmEpXG5gYGAifQ== -->
-<pre class="r"><code>(-b + sqrt(b^2 - 4*a*c)) / (2*a)
-(-b - sqrt(b^2 - 4*a*c)) / (2*a)</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuKC1iICsgc3FydChiXjIgLSA0KmEqYykpIC8gKDIqYSlcbmBgYCJ9 -->
+<pre class="r"><code>(-b + sqrt(b^2 - 4*a*c)) / (2*a)</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDAuNjE4MDM0XG4ifQ== -->
+<pre><code>[1] 0.618034</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuKC1iIC0gc3FydChiXjIgLSA0KmEqYykpIC8gKDIqYSlcbmBgYCJ9 -->
+<pre class="r"><code>(-b - sqrt(b^2 - 4*a*c)) / (2*a)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIC0xLjYxODAzNFxuIn0= -->
+<pre><code>[1] -1.618034</code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 </div>
@@ -1817,10 +1837,18 @@ c &lt;- -1</code></pre>
 <p>Unlike <code>ls</code>, most functions require one or more <em>arguments</em>. Below is an example of how we assign an object to the argument of the function <code>log</code>. Remember that we earlier defined <code>a</code> to be 1:</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubG9nKDgpXG5sb2coYSlcbmBgYCJ9 -->
-<pre class="r"><code>log(8)
-log(a)</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubG9nKDgpXG5gYGAifQ== -->
+<pre class="r"><code>log(8)</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDIuMDc5NDQyXG4ifQ== -->
+<pre><code>[1] 2.079442</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubG9nKGEpXG5gYGAifQ== -->
+<pre class="r"><code>log(a)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDBcbiJ9 -->
+<pre><code>[1] 0</code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p><br> You can find out what the function expects and what it does by reviewing the very useful manuals included in R. You can get help by using the <code>help</code> function like this:</p>
@@ -1846,6 +1874,10 @@ log(a)</code></pre>
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYXJncyhsb2cpXG5gYGAifQ== -->
 <pre class="r"><code>args(log)</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiZnVuY3Rpb24gKHgsIGJhc2UgPSBleHAoMSkpIFxuTlVMTFxuIn0= -->
+<pre><code>function (x, base = exp(1)) 
+NULL</code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p><br> You can change the default values by simply assigning another object:</p>
@@ -1854,6 +1886,9 @@ log(a)</code></pre>
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubG9nKDgsIGJhc2U9MilcbmBgYCJ9 -->
 <pre class="r"><code>log(8, base=2)</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDNcbiJ9 -->
+<pre><code>[1] 3</code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p><br> Note that we have not been specifying the argument <code>x</code> as such:</p>
@@ -1862,6 +1897,9 @@ log(a)</code></pre>
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubG9nKHggPSA4LCBiYXNlID0gMilcbmBgYCJ9 -->
 <pre class="r"><code>log(x = 8, base = 2)</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDNcbiJ9 -->
+<pre><code>[1] 3</code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p><br> The above code works, but we can save ourselves some typing: if no argument name is used, R assumes you are entering arguments in the order shown in the help file or by <code>args</code>. So by not using the names, it assumes the arguments are <code>x</code> followed by <code>base</code>:</p>
@@ -1870,6 +1908,9 @@ log(a)</code></pre>
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubG9nKDgsMilcbmBgYCJ9 -->
 <pre class="r"><code>log(8,2)</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDNcbiJ9 -->
+<pre><code>[1] 3</code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p><br> If using the arguments’ names, then we can include them in whatever order we want:</p>
@@ -1878,6 +1919,9 @@ log(a)</code></pre>
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubG9nKGJhc2UgPSAyLCB4ID0gOClcbmBgYCJ9 -->
 <pre class="r"><code>log(base = 2, x = 8)</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDNcbiJ9 -->
+<pre><code>[1] 3</code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p><br> To specify arguments, we must use <code>=</code>, and cannot use <code>&lt;-</code>.</p>
@@ -1887,6 +1931,9 @@ log(a)</code></pre>
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuMl4zXG5gYGAifQ== -->
 <pre class="r"><code>2^3</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDhcbiJ9 -->
+<pre><code>[1] 8</code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p><br> You can see the arithmetic operators by typing:</p>
@@ -1938,16 +1985,106 @@ log(a)</code></pre>
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuY28yXG5gYGAifQ== -->
 <pre class="r"><code>co2</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiICAgICAgICBKYW4gICAgRmViICAgIE1hciAgICBBcHIgICAgTWF5ICAgIEp1biAgICBKdWwgICAgQXVnICAgIFNlcCAgICBPY3RcbjE5NTkgMzE1LjQyIDMxNi4zMSAzMTYuNTAgMzE3LjU2IDMxOC4xMyAzMTguMDAgMzE2LjM5IDMxNC42NSAzMTMuNjggMzEzLjE4XG4xOTYwIDMxNi4yNyAzMTYuODEgMzE3LjQyIDMxOC44NyAzMTkuODcgMzE5LjQzIDMxOC4wMSAzMTUuNzQgMzE0LjAwIDMxMy42OFxuMTk2MSAzMTYuNzMgMzE3LjU0IDMxOC4zOCAzMTkuMzEgMzIwLjQyIDMxOS42MSAzMTguNDIgMzE2LjYzIDMxNC44MyAzMTUuMTZcbjE5NjIgMzE3Ljc4IDMxOC40MCAzMTkuNTMgMzIwLjQyIDMyMC44NSAzMjAuNDUgMzE5LjQ1IDMxNy4yNSAzMTYuMTEgMzE1LjI3XG4xOTYzIDMxOC41OCAzMTguOTIgMzE5LjcwIDMyMS4yMiAzMjIuMDggMzIxLjMxIDMxOS41OCAzMTcuNjEgMzE2LjA1IDMxNS44M1xuMTk2NCAzMTkuNDEgMzIwLjA3IDMyMC43NCAzMjEuNDAgMzIyLjA2IDMyMS43MyAzMjAuMjcgMzE4LjU0IDMxNi41NCAzMTYuNzFcbjE5NjUgMzE5LjI3IDMyMC4yOCAzMjAuNzMgMzIxLjk3IDMyMi4wMCAzMjEuNzEgMzIxLjA1IDMxOC43MSAzMTcuNjYgMzE3LjE0XG4xOTY2IDMyMC40NiAzMjEuNDMgMzIyLjIzIDMyMy41NCAzMjMuOTEgMzIzLjU5IDMyMi4yNCAzMjAuMjAgMzE4LjQ4IDMxNy45NFxuMTk2NyAzMjIuMTcgMzIyLjM0IDMyMi44OCAzMjQuMjUgMzI0LjgzIDMyMy45MyAzMjIuMzggMzIwLjc2IDMxOS4xMCAzMTkuMjRcbjE5NjggMzIyLjQwIDMyMi45OSAzMjMuNzMgMzI0Ljg2IDMyNS40MCAzMjUuMjAgMzIzLjk4IDMyMS45NSAzMjAuMTggMzIwLjA5XG4xOTY5IDMyMy44MyAzMjQuMjYgMzI1LjQ3IDMyNi41MCAzMjcuMjEgMzI2LjU0IDMyNS43MiAzMjMuNTAgMzIyLjIyIDMyMS42MlxuMTk3MCAzMjQuODkgMzI1LjgyIDMyNi43NyAzMjcuOTcgMzI3LjkxIDMyNy41MCAzMjYuMTggMzI0LjUzIDMyMi45MyAzMjIuOTBcbjE5NzEgMzI2LjAxIDMyNi41MSAzMjcuMDEgMzI3LjYyIDMyOC43NiAzMjguNDAgMzI3LjIwIDMyNS4yNyAzMjMuMjAgMzIzLjQwXG4xOTcyIDMyNi42MCAzMjcuNDcgMzI3LjU4IDMyOS41NiAzMjkuOTAgMzI4LjkyIDMyNy44OCAzMjYuMTYgMzI0LjY4IDMyNS4wNFxuMTk3MyAzMjguMzcgMzI5LjQwIDMzMC4xNCAzMzEuMzMgMzMyLjMxIDMzMS45MCAzMzAuNzAgMzI5LjE1IDMyNy4zNSAzMjcuMDJcbjE5NzQgMzI5LjE4IDMzMC41NSAzMzEuMzIgMzMyLjQ4IDMzMi45MiAzMzIuMDggMzMxLjAxIDMyOS4yMyAzMjcuMjcgMzI3LjIxXG4xOTc1IDMzMC4yMyAzMzEuMjUgMzMxLjg3IDMzMy4xNCAzMzMuODAgMzMzLjQzIDMzMS43MyAzMjkuOTAgMzI4LjQwIDMyOC4xN1xuMTk3NiAzMzEuNTggMzMyLjM5IDMzMy4zMyAzMzQuNDEgMzM0LjcxIDMzNC4xNyAzMzIuODkgMzMwLjc3IDMyOS4xNCAzMjguNzhcbjE5NzcgMzMyLjc1IDMzMy4yNCAzMzQuNTMgMzM1LjkwIDMzNi41NyAzMzYuMTAgMzM0Ljc2IDMzMi41OSAzMzEuNDIgMzMwLjk4XG4xOTc4IDMzNC44MCAzMzUuMjIgMzM2LjQ3IDMzNy41OSAzMzcuODQgMzM3LjcyIDMzNi4zNyAzMzQuNTEgMzMyLjYwIDMzMi4zOFxuMTk3OSAzMzYuMDUgMzM2LjU5IDMzNy43OSAzMzguNzEgMzM5LjMwIDMzOS4xMiAzMzcuNTYgMzM1LjkyIDMzMy43NSAzMzMuNzBcbjE5ODAgMzM3Ljg0IDMzOC4xOSAzMzkuOTEgMzQwLjYwIDM0MS4yOSAzNDEuMDAgMzM5LjM5IDMzNy40MyAzMzUuNzIgMzM1Ljg0XG4xOTgxIDMzOS4wNiAzNDAuMzAgMzQxLjIxIDM0Mi4zMyAzNDIuNzQgMzQyLjA4IDM0MC4zMiAzMzguMjYgMzM2LjUyIDMzNi42OFxuMTk4MiAzNDAuNTcgMzQxLjQ0IDM0Mi41MyAzNDMuMzkgMzQzLjk2IDM0My4xOCAzNDEuODggMzM5LjY1IDMzNy44MSAzMzcuNjlcbjE5ODMgMzQxLjIwIDM0Mi4zNSAzNDIuOTMgMzQ0Ljc3IDM0NS41OCAzNDUuMTQgMzQzLjgxIDM0Mi4yMSAzMzkuNjkgMzM5LjgyXG4xOTg0IDM0My41MiAzNDQuMzMgMzQ1LjExIDM0Ni44OCAzNDcuMjUgMzQ2LjYyIDM0NS4yMiAzNDMuMTEgMzQwLjkwIDM0MS4xOFxuMTk4NSAzNDQuNzkgMzQ1LjgyIDM0Ny4yNSAzNDguMTcgMzQ4Ljc0IDM0OC4wNyAzNDYuMzggMzQ0LjUxIDM0Mi45MiAzNDIuNjJcbjE5ODYgMzQ2LjExIDM0Ni43OCAzNDcuNjggMzQ5LjM3IDM1MC4wMyAzNDkuMzcgMzQ3Ljc2IDM0NS43MyAzNDQuNjggMzQzLjk5XG4xOTg3IDM0Ny44NCAzNDguMjkgMzQ5LjIzIDM1MC44MCAzNTEuNjYgMzUxLjA3IDM0OS4zMyAzNDcuOTIgMzQ2LjI3IDM0Ni4xOFxuMTk4OCAzNTAuMjUgMzUxLjU0IDM1Mi4wNSAzNTMuNDEgMzU0LjA0IDM1My42MiAzNTIuMjIgMzUwLjI3IDM0OC41NSAzNDguNzJcbjE5ODkgMzUyLjYwIDM1Mi45MiAzNTMuNTMgMzU1LjI2IDM1NS41MiAzNTQuOTcgMzUzLjc1IDM1MS41MiAzNDkuNjQgMzQ5LjgzXG4xOTkwIDM1My41MCAzNTQuNTUgMzU1LjIzIDM1Ni4wNCAzNTcuMDAgMzU2LjA3IDM1NC42NyAzNTIuNzYgMzUwLjgyIDM1MS4wNFxuMTk5MSAzNTQuNTkgMzU1LjYzIDM1Ny4wMyAzNTguNDggMzU5LjIyIDM1OC4xMiAzNTYuMDYgMzUzLjkyIDM1Mi4wNSAzNTIuMTFcbjE5OTIgMzU1Ljg4IDM1Ni42MyAzNTcuNzIgMzU5LjA3IDM1OS41OCAzNTkuMTcgMzU2Ljk0IDM1NC45MiAzNTIuOTQgMzUzLjIzXG4xOTkzIDM1Ni42MyAzNTcuMTAgMzU4LjMyIDM1OS40MSAzNjAuMjMgMzU5LjU1IDM1Ny41MyAzNTUuNDggMzUzLjY3IDM1My45NVxuMTk5NCAzNTguMzQgMzU4Ljg5IDM1OS45NSAzNjEuMjUgMzYxLjY3IDM2MC45NCAzNTkuNTUgMzU3LjQ5IDM1NS44NCAzNTYuMDBcbjE5OTUgMzU5Ljk4IDM2MS4wMyAzNjEuNjYgMzYzLjQ4IDM2My44MiAzNjMuMzAgMzYxLjk0IDM1OS41MCAzNTguMTEgMzU3LjgwXG4xOTk2IDM2Mi4wOSAzNjMuMjkgMzY0LjA2IDM2NC43NiAzNjUuNDUgMzY1LjAxIDM2My43MCAzNjEuNTQgMzU5LjUxIDM1OS42NVxuMTk5NyAzNjMuMjMgMzY0LjA2IDM2NC42MSAzNjYuNDAgMzY2Ljg0IDM2NS42OCAzNjQuNTIgMzYyLjU3IDM2MC4yNCAzNjAuODNcbiAgICAgICAgTm92ICAgIERlY1xuMTk1OSAzMTQuNjYgMzE1LjQzXG4xOTYwIDMxNC44NCAzMTYuMDNcbjE5NjEgMzE1Ljk0IDMxNi44NVxuMTk2MiAzMTYuNTMgMzE3LjUzXG4xOTYzIDMxNi45MSAzMTguMjBcbjE5NjQgMzE3LjUzIDMxOC41NVxuMTk2NSAzMTguNzAgMzE5LjI1XG4xOTY2IDMxOS42MyAzMjAuODdcbjE5NjcgMzIwLjU2IDMyMS44MFxuMTk2OCAzMjEuMTYgMzIyLjc0XG4xOTY5IDMyMi42OSAzMjMuOTVcbjE5NzAgMzIzLjg1IDMyNC45NlxuMTk3MSAzMjQuNjMgMzI1Ljg1XG4xOTcyIDMyNi4zNCAzMjcuMzlcbjE5NzMgMzI3Ljk5IDMyOC40OFxuMTk3NCAzMjguMjkgMzI5LjQxXG4xOTc1IDMyOS4zMiAzMzAuNTlcbjE5NzYgMzMwLjE0IDMzMS41MlxuMTk3NyAzMzIuMjQgMzMzLjY4XG4xOTc4IDMzMy43NSAzMzQuNzhcbjE5NzkgMzM1LjEyIDMzNi41NlxuMTk4MCAzMzYuOTMgMzM4LjA0XG4xOTgxIDMzOC4xOSAzMzkuNDRcbjE5ODIgMzM5LjA5IDM0MC4zMlxuMTk4MyAzNDAuOTggMzQyLjgyXG4xOTg0IDM0Mi44MCAzNDQuMDRcbjE5ODUgMzQ0LjA2IDM0NS4zOFxuMTk4NiAzNDUuNDggMzQ2LjcyXG4xOTg3IDM0Ny42NCAzNDguNzhcbjE5ODggMzQ5LjkxIDM1MS4xOFxuMTk4OSAzNTEuMTQgMzUyLjM3XG4xOTkwIDM1Mi42OSAzNTQuMDdcbjE5OTEgMzUzLjY0IDM1NC44OVxuMTk5MiAzNTQuMDkgMzU1LjMzXG4xOTkzIDM1NS4zMCAzNTYuNzhcbjE5OTQgMzU3LjU5IDM1OS4wNVxuMTk5NSAzNTkuNjEgMzYwLjc0XG4xOTk2IDM2MC44MCAzNjIuMzhcbjE5OTcgMzYyLjQ5IDM2NC4zNFxuIn0= -->
+<pre><code>        Jan    Feb    Mar    Apr    May    Jun    Jul    Aug    Sep    Oct
+1959 315.42 316.31 316.50 317.56 318.13 318.00 316.39 314.65 313.68 313.18
+1960 316.27 316.81 317.42 318.87 319.87 319.43 318.01 315.74 314.00 313.68
+1961 316.73 317.54 318.38 319.31 320.42 319.61 318.42 316.63 314.83 315.16
+1962 317.78 318.40 319.53 320.42 320.85 320.45 319.45 317.25 316.11 315.27
+1963 318.58 318.92 319.70 321.22 322.08 321.31 319.58 317.61 316.05 315.83
+1964 319.41 320.07 320.74 321.40 322.06 321.73 320.27 318.54 316.54 316.71
+1965 319.27 320.28 320.73 321.97 322.00 321.71 321.05 318.71 317.66 317.14
+1966 320.46 321.43 322.23 323.54 323.91 323.59 322.24 320.20 318.48 317.94
+1967 322.17 322.34 322.88 324.25 324.83 323.93 322.38 320.76 319.10 319.24
+1968 322.40 322.99 323.73 324.86 325.40 325.20 323.98 321.95 320.18 320.09
+1969 323.83 324.26 325.47 326.50 327.21 326.54 325.72 323.50 322.22 321.62
+1970 324.89 325.82 326.77 327.97 327.91 327.50 326.18 324.53 322.93 322.90
+1971 326.01 326.51 327.01 327.62 328.76 328.40 327.20 325.27 323.20 323.40
+1972 326.60 327.47 327.58 329.56 329.90 328.92 327.88 326.16 324.68 325.04
+1973 328.37 329.40 330.14 331.33 332.31 331.90 330.70 329.15 327.35 327.02
+1974 329.18 330.55 331.32 332.48 332.92 332.08 331.01 329.23 327.27 327.21
+1975 330.23 331.25 331.87 333.14 333.80 333.43 331.73 329.90 328.40 328.17
+1976 331.58 332.39 333.33 334.41 334.71 334.17 332.89 330.77 329.14 328.78
+1977 332.75 333.24 334.53 335.90 336.57 336.10 334.76 332.59 331.42 330.98
+1978 334.80 335.22 336.47 337.59 337.84 337.72 336.37 334.51 332.60 332.38
+1979 336.05 336.59 337.79 338.71 339.30 339.12 337.56 335.92 333.75 333.70
+1980 337.84 338.19 339.91 340.60 341.29 341.00 339.39 337.43 335.72 335.84
+1981 339.06 340.30 341.21 342.33 342.74 342.08 340.32 338.26 336.52 336.68
+1982 340.57 341.44 342.53 343.39 343.96 343.18 341.88 339.65 337.81 337.69
+1983 341.20 342.35 342.93 344.77 345.58 345.14 343.81 342.21 339.69 339.82
+1984 343.52 344.33 345.11 346.88 347.25 346.62 345.22 343.11 340.90 341.18
+1985 344.79 345.82 347.25 348.17 348.74 348.07 346.38 344.51 342.92 342.62
+1986 346.11 346.78 347.68 349.37 350.03 349.37 347.76 345.73 344.68 343.99
+1987 347.84 348.29 349.23 350.80 351.66 351.07 349.33 347.92 346.27 346.18
+1988 350.25 351.54 352.05 353.41 354.04 353.62 352.22 350.27 348.55 348.72
+1989 352.60 352.92 353.53 355.26 355.52 354.97 353.75 351.52 349.64 349.83
+1990 353.50 354.55 355.23 356.04 357.00 356.07 354.67 352.76 350.82 351.04
+1991 354.59 355.63 357.03 358.48 359.22 358.12 356.06 353.92 352.05 352.11
+1992 355.88 356.63 357.72 359.07 359.58 359.17 356.94 354.92 352.94 353.23
+1993 356.63 357.10 358.32 359.41 360.23 359.55 357.53 355.48 353.67 353.95
+1994 358.34 358.89 359.95 361.25 361.67 360.94 359.55 357.49 355.84 356.00
+1995 359.98 361.03 361.66 363.48 363.82 363.30 361.94 359.50 358.11 357.80
+1996 362.09 363.29 364.06 364.76 365.45 365.01 363.70 361.54 359.51 359.65
+1997 363.23 364.06 364.61 366.40 366.84 365.68 364.52 362.57 360.24 360.83
+        Nov    Dec
+1959 314.66 315.43
+1960 314.84 316.03
+1961 315.94 316.85
+1962 316.53 317.53
+1963 316.91 318.20
+1964 317.53 318.55
+1965 318.70 319.25
+1966 319.63 320.87
+1967 320.56 321.80
+1968 321.16 322.74
+1969 322.69 323.95
+1970 323.85 324.96
+1971 324.63 325.85
+1972 326.34 327.39
+1973 327.99 328.48
+1974 328.29 329.41
+1975 329.32 330.59
+1976 330.14 331.52
+1977 332.24 333.68
+1978 333.75 334.78
+1979 335.12 336.56
+1980 336.93 338.04
+1981 338.19 339.44
+1982 339.09 340.32
+1983 340.98 342.82
+1984 342.80 344.04
+1985 344.06 345.38
+1986 345.48 346.72
+1987 347.64 348.78
+1988 349.91 351.18
+1989 351.14 352.37
+1990 352.69 354.07
+1991 353.64 354.89
+1992 354.09 355.33
+1993 355.30 356.78
+1994 357.59 359.05
+1995 359.61 360.74
+1996 360.80 362.38
+1997 362.49 364.34</code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p><br> R will show you Mauna Loa atmospheric CO2 concentration data.</p>
 <p>Other prebuilt objects are mathematical quantities, such as the constant π and ∞ :</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucGlcbkluZisxXG5gYGAifQ== -->
-<pre class="r"><code>pi
-Inf+1</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucGlcbmBgYCJ9 -->
+<pre class="r"><code>pi</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDMuMTQxNTkzXG4ifQ== -->
+<pre><code>[1] 3.141593</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuSW5mKzFcbmBgYCJ9 -->
+<pre class="r"><code>Inf+1</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIEluZlxuIn0= -->
+<pre><code>[1] Inf</code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 </div>
@@ -1977,13 +2114,21 @@ solution_2 &lt;- (-b - sqrt(b^2 - 4*a*c)) / (2*a)</code></pre>
 <p><br> To solve another equation such as <span class="math inline">\(3x^2+2x−1\)</span>, we can copy and paste the code above and then redefine the variables and recompute the solution:</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYSA8LSAzXG5iIDwtIDJcbmMgPC0gLTFcbigtYiArIHNxcnQoYl4yIC0gNCphKmMpKSAvICgyKmEpXG4oLWIgLSBzcXJ0KGJeMiAtIDQqYSpjKSkgLyAoMiphKVxuYGBgIn0= -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYSA8LSAzXG5iIDwtIDJcbmMgPC0gLTFcbigtYiArIHNxcnQoYl4yIC0gNCphKmMpKSAvICgyKmEpXG5gYGAifQ== -->
 <pre class="r"><code>a &lt;- 3
 b &lt;- 2
 c &lt;- -1
-(-b + sqrt(b^2 - 4*a*c)) / (2*a)
-(-b - sqrt(b^2 - 4*a*c)) / (2*a)</code></pre>
+(-b + sqrt(b^2 - 4*a*c)) / (2*a)</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDAuMzMzMzMzM1xuIn0= -->
+<pre><code>[1] 0.3333333</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuKC1iIC0gc3FydChiXjIgLSA0KmEqYykpIC8gKDIqYSlcbmBgYCJ9 -->
+<pre class="r"><code>(-b - sqrt(b^2 - 4*a*c)) / (2*a)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIC0xXG4ifQ== -->
+<pre><code>[1] -1</code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p><br> By creating and saving a script with the code above, we would not need to retype everything each time and, instead, simply change the variable names. Try writing the script above into an editor and notice how easy it is to change the variables and receive an answer.</p>
@@ -1993,7 +2138,7 @@ c &lt;- -1
 <p><br> If a line of R code starts with the symbol <code>#</code>, it is not evaluated. We can use this to write reminders of why we wrote particular code. For example, in the script above we could add:</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyMgQ29kZSB0byBjb21wdXRlIHNvbHV0aW9uIHRvIHF1YWRyYXRpYyBlcXVhdGlvbiBvZiB0aGUgZm9ybSBheF4yICsgYnggKyBjXG4jIyBkZWZpbmUgdGhlIHZhcmlhYmxlc1xuYSA8LSAzXG5iIDwtIDJcbmMgPC0gLTFcblxuIyMgbm93IGNvbXB1dGUgdGhlIHNvbHV0aW9uXG4oLWIgKyBzcXJ0KGJeMiAtIDQqYSpjKSkgLyAoMiphKVxuKC1iIC0gc3FydChiXjIgLSA0KmEqYykpIC8gKDIqYSlcbmBgYCJ9 -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyMgQ29kZSB0byBjb21wdXRlIHNvbHV0aW9uIHRvIHF1YWRyYXRpYyBlcXVhdGlvbiBvZiB0aGUgZm9ybSBheF4yICsgYnggKyBjXG4jIyBkZWZpbmUgdGhlIHZhcmlhYmxlc1xuYSA8LSAzXG5iIDwtIDJcbmMgPC0gLTFcblxuIyMgbm93IGNvbXB1dGUgdGhlIHNvbHV0aW9uXG4oLWIgKyBzcXJ0KGJeMiAtIDQqYSpjKSkgLyAoMiphKVxuYGBgIn0= -->
 <pre class="r"><code>## Code to compute solution to quadratic equation of the form ax^2 + bx + c
 ## define the variables
 a &lt;- 3
@@ -2001,9 +2146,17 @@ b &lt;- 2
 c &lt;- -1
 
 ## now compute the solution
-(-b + sqrt(b^2 - 4*a*c)) / (2*a)
-(-b - sqrt(b^2 - 4*a*c)) / (2*a)</code></pre>
+(-b + sqrt(b^2 - 4*a*c)) / (2*a)</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDAuMzMzMzMzM1xuIn0= -->
+<pre><code>[1] 0.3333333</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuKC1iIC0gc3FydChiXjIgLSA0KmEqYykpIC8gKDIqYSlcbmBgYCJ9 -->
+<pre class="r"><code>(-b - sqrt(b^2 - 4*a*c)) / (2*a)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIC0xXG4ifQ== -->
+<pre><code>[1] -1</code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 </div>
@@ -2013,20 +2166,30 @@ c &lt;- -1
 <p><br> 1. What is the sum of the first 100 positive integers? The formula for the sum of integers <span class="math inline">\(1\)</span> through <span class="math inline">\(n\)</span> is <span class="math inline">\(n(n+1)/2\)</span>. Define <span class="math inline">\(n=100\)</span> and then use R to compute the sum of <span class="math inline">\(1\)</span> through <span class="math inline">\(100\)</span> using the formula. What is the sum?</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubiA8LSAxMDBcbm4qKG4rMSkvMiBcbiM+IFsxXSA1MDUwXG5gYGAifQ== -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubiA8LSAxMDBcbm4qKG4rMSkvMiBcbmBgYCJ9 -->
 <pre class="r"><code>n &lt;- 100
-n*(n+1)/2 
-#&gt; [1] 5050</code></pre>
+n*(n+1)/2 </code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDUwNTBcbiJ9 -->
+<pre><code>[1] 5050</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIz4gWzFdIDUwNTBcbmBgYCJ9 -->
+<pre class="r"><code>#&gt; [1] 5050</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p><br> 2. Now use the same formula to compute the sum of the integers from 1 through 1,000.</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubiA8LSAxMDAwXG5uKihuKzEpLzJcbiM+IFsxXSA1MDA1MDBcbmBgYCJ9 -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubiA8LSAxMDAwXG5uKihuKzEpLzJcbmBgYCJ9 -->
 <pre class="r"><code>n &lt;- 1000
-n*(n+1)/2
-#&gt; [1] 500500</code></pre>
+n*(n+1)/2</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDUwMDUwMFxuIn0= -->
+<pre><code>[1] 500500</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIz4gWzFdIDUwMDUwMFxuYGBgIn0= -->
+<pre class="r"><code>#&gt; [1] 500500</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
@@ -2038,6 +2201,9 @@ n*(n+1)/2
 x &lt;- seq(1, n)
 sum(x)</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDUwMDUwMFxuIn0= -->
+<pre><code>[1] 500500</code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p><br> Based on the result, what do you think the functions <code>seq</code> and <code>sum</code> do? You can use <code>help</code>.</p>
@@ -2053,6 +2219,9 @@ sum(x)</code></pre>
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubG9nKHNxcnQoMTAwKSwxMClcbmBgYCJ9 -->
 <pre class="r"><code>log(sqrt(100),10)</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDFcbiJ9 -->
+<pre><code>[1] 1</code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p><br> 5. Which of the following will always return the numeric value stored in <code>x</code>? You can try out examples and use the help system if you want.</p>
@@ -2073,6 +2242,9 @@ sum(x)</code></pre>
 <pre class="r"><code>a &lt;- 2
 class(a)</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwibnVtZXJpY1wiXG4ifQ== -->
+<pre><code>[1] &quot;numeric&quot;</code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p><br> To work efficiently in R, it is important to learn the different types of variables and what we can do with these.</p>
@@ -2094,6 +2266,9 @@ data(murders)</code></pre>
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuY2xhc3MobXVyZGVycylcbmBgYCJ9 -->
 <pre class="r"><code>class(murders)</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwiZGF0YS5mcmFtZVwiXG4ifQ== -->
+<pre><code>[1] &quot;data.frame&quot;</code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 </div>
@@ -2105,6 +2280,14 @@ data(murders)</code></pre>
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc3RyKG11cmRlcnMpXG5gYGAifQ== -->
 <pre class="r"><code>str(murders)</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiJ2RhdGEuZnJhbWUnOlx0NTEgb2JzLiBvZiAgNSB2YXJpYWJsZXM6XG4gJCBzdGF0ZSAgICAgOiBjaHIgIFwiQWxhYmFtYVwiIFwiQWxhc2thXCIgXCJBcml6b25hXCIgXCJBcmthbnNhc1wiIC4uLlxuICQgYWJiICAgICAgIDogY2hyICBcIkFMXCIgXCJBS1wiIFwiQVpcIiBcIkFSXCIgLi4uXG4gJCByZWdpb24gICAgOiBGYWN0b3Igdy8gNCBsZXZlbHMgXCJOb3J0aGVhc3RcIixcIlNvdXRoXCIsLi46IDIgNCA0IDIgNCA0IDEgMiAyIDIgLi4uXG4gJCBwb3B1bGF0aW9uOiBudW0gIDQ3Nzk3MzYgNzEwMjMxIDYzOTIwMTcgMjkxNTkxOCAzNzI1Mzk1NiAuLi5cbiAkIHRvdGFsICAgICA6IG51bSAgMTM1IDE5IDIzMiA5MyAxMjU3IC4uLlxuIn0= -->
+<pre><code>&#39;data.frame&#39;:   51 obs. of  5 variables:
+ $ state     : chr  &quot;Alabama&quot; &quot;Alaska&quot; &quot;Arizona&quot; &quot;Arkansas&quot; ...
+ $ abb       : chr  &quot;AL&quot; &quot;AK&quot; &quot;AZ&quot; &quot;AR&quot; ...
+ $ region    : Factor w/ 4 levels &quot;Northeast&quot;,&quot;South&quot;,..: 2 4 4 2 4 4 1 2 2 2 ...
+ $ population: num  4779736 710231 6392017 2915918 37253956 ...
+ $ total     : num  135 19 232 93 1257 ...</code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p><br> This tells us much more about the object. We see that the table has 51 rows (50 states plus DC) and five variables. We can show the first six lines using the function <code>head</code>:</p>
@@ -2113,6 +2296,13 @@ data(murders)</code></pre>
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuaGVhZChtdXJkZXJzKVxuYGBgIn0= -->
 <pre class="r"><code>head(murders)</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEuZnJhbWUiXSwibnJvdyI6NiwibmNvbCI6NX0sInJkZiI6IlVrUllNd3BZQ2dBQUFBTUFCQUFDQUFNRkFBQUFBQVZWVkVZdE9BQUFCQUlBQUFBQkFBUUFDUUFBQUFGNEFBQURFd0FBQUFVQUFBQVFBQUFBQmdBRUFBa0FBQUFIUVd4aFltRnRZUUFFQUFrQUFBQUdRV3hoYzJ0aEFBUUFDUUFBQUFkQmNtbDZiMjVoQUFRQUNRQUFBQWhCY210aGJuTmhjd0FFQUFrQUFBQUtRMkZzYVdadmNtNXBZUUFFQUFrQUFBQUlRMjlzYjNKaFpHOEFBQUFRQUFBQUJnQUVBQWtBQUFBQ1FVd0FCQUFKQUFBQUFrRkxBQVFBQ1FBQUFBSkJXZ0FFQUFrQUFBQUNRVklBQkFBSkFBQUFBa05CQUFRQUNRQUFBQUpEVHdBQUF3MEFBQUFHQUFBQUFnQUFBQVFBQUFBRUFBQUFBZ0FBQUFRQUFBQUVBQUFFQWdBQUFBRUFCQUFKQUFBQUJteGxkbVZzY3dBQUFCQUFBQUFFQUFRQUNRQUFBQWxPYjNKMGFHVmhjM1FBQkFBSkFBQUFCVk52ZFhSb0FBUUFDUUFBQUExT2IzSjBhQ0JEWlc1MGNtRnNBQVFBQ1FBQUFBUlhaWE4wQUFBRUFnQUFBQUVBQkFBSkFBQUFCV05zWVhOekFBQUFFQUFBQUFFQUJBQUpBQUFBQm1aaFkzUnZjZ0FBQVA0QUFBQU9BQUFBQmtGU083WUFBQUFBUVNXc3JnQUFBQUJCV0dJMFFBQUFBRUZHUHljQUFBQUFRWUhEbWlBQUFBQkJVeTlUQUFBQUFBQUFBQTRBQUFBR1FHRGdBQUFBQUFCQU13QUFBQUFBQUVCdEFBQUFBQUFBUUZkQUFBQUFBQUJBazZRQUFBQUFBRUJRUUFBQUFBQUFBQUFFQWdBQUFBRUFCQUFKQUFBQUJXNWhiV1Z6QUFBQUVBQUFBQVVBQkFBSkFBQUFCWE4wWVhSbEFBUUFDUUFBQUFOaFltSUFCQUFKQUFBQUJuSmxaMmx2YmdBRUFBa0FBQUFLY0c5d2RXeGhkR2x2YmdBRUFBa0FBQUFGZEc5MFlXd0FBQVFDQUFBQUFRQUVBQWtBQUFBSmNtOTNMbTVoYldWekFBQUFEUUFBQUFLQUFBQUFBQUFBQmdBQUJBSUFBQVAvQUFBQUVBQUFBQUVBQkFBSkFBQUFDbVJoZEdFdVpuSmhiV1VBQUFEK0FBQUVBZ0FBQUFFQUJBQUpBQUFBQjI5d2RHbHZibk1BQUFJVEFBQUFCUUFBQUJBQUFBQUJBQVFBQ1FBQUFBRnlBQUFBRUFBQUFBRUFCQUFKQUFBQUVIVnVibUZ0WldRdFkyaDFibXN0TXpNQUFBQUtBQUFBQVFBQUFBRUFBQUFOQUFBQUFRQUFBQVlBQUFBTkFBQUFBUUFBQUFVQUFBUUNBQUFFL3dBQUFCQUFBQUFGQUFRQUNRQUFBQVpsYm1kcGJtVUFCQUFKQUFBQUJXeGhZbVZzQUFRQUNRQUFBQTV5YjNkdVlXMWxjeTV3Y21sdWRBQUVBQWtBQUFBS2NtOTNjeTUwYjNSaGJBQUVBQWtBQUFBS1kyOXNjeTUwYjNSaGJBQUFBUDRBQUFEKyJ9 -->
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["state"],"name":[1],"type":["chr"],"align":["left"]},{"label":["abb"],"name":[2],"type":["chr"],"align":["left"]},{"label":["region"],"name":[3],"type":["fctr"],"align":["left"]},{"label":["population"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["total"],"name":[5],"type":["dbl"],"align":["right"]}],"data":[{"1":"Alabama","2":"AL","3":"South","4":"4779736","5":"135","_rn_":"1"},{"1":"Alaska","2":"AK","3":"West","4":"710231","5":"19","_rn_":"2"},{"1":"Arizona","2":"AZ","3":"West","4":"6392017","5":"232","_rn_":"3"},{"1":"Arkansas","2":"AR","3":"South","4":"2915918","5":"93","_rn_":"4"},{"1":"California","2":"CA","3":"West","4":"37253956","5":"1257","_rn_":"5"},{"1":"Colorado","2":"CO","3":"West","4":"5029196","5":"65","_rn_":"6"}],"options":{"columns":{"min":{},"max":[10],"total":[5]},"rows":{"min":[10],"max":[10],"total":[6]},"pages":{}}}
+  </script>
+</div>
+<!-- rnb-frame-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p><br> In this dataset, each state is considered an observation and five variables are reported for each state.</p>
@@ -2126,6 +2316,15 @@ data(murders)</code></pre>
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubXVyZGVycyRwb3B1bGF0aW9uXG5gYGAifQ== -->
 <pre class="r"><code>murders$population</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiIFsxXSAgNDc3OTczNiAgIDcxMDIzMSAgNjM5MjAxNyAgMjkxNTkxOCAzNzI1Mzk1NiAgNTAyOTE5NiAgMzU3NDA5NyAgIDg5NzkzNFxuIFs5XSAgIDYwMTcyMyAxOTY4NzY1MyAgOTkyMDAwMCAgMTM2MDMwMSAgMTU2NzU4MiAxMjgzMDYzMiAgNjQ4MzgwMiAgMzA0NjM1NVxuWzE3XSAgMjg1MzExOCAgNDMzOTM2NyAgNDUzMzM3MiAgMTMyODM2MSAgNTc3MzU1MiAgNjU0NzYyOSAgOTg4MzY0MCAgNTMwMzkyNVxuWzI1XSAgMjk2NzI5NyAgNTk4ODkyNyAgIDk4OTQxNSAgMTgyNjM0MSAgMjcwMDU1MSAgMTMxNjQ3MCAgODc5MTg5NCAgMjA1OTE3OVxuWzMzXSAxOTM3ODEwMiAgOTUzNTQ4MyAgIDY3MjU5MSAxMTUzNjUwNCAgMzc1MTM1MSAgMzgzMTA3NCAxMjcwMjM3OSAgMTA1MjU2N1xuWzQxXSAgNDYyNTM2NCAgIDgxNDE4MCAgNjM0NjEwNSAyNTE0NTU2MSAgMjc2Mzg4NSAgIDYyNTc0MSAgODAwMTAyNCAgNjcyNDU0MFxuWzQ5XSAgMTg1Mjk5NCAgNTY4Njk4NiAgIDU2MzYyNlxuIn0= -->
+<pre><code> [1]  4779736   710231  6392017  2915918 37253956  5029196  3574097   897934
+ [9]   601723 19687653  9920000  1360301  1567582 12830632  6483802  3046355
+[17]  2853118  4339367  4533372  1328361  5773552  6547629  9883640  5303925
+[25]  2967297  5988927   989415  1826341  2700551  1316470  8791894  2059179
+[33] 19378102  9535483   672591 11536504  3751351  3831074 12702379  1052567
+[41]  4625364   814180  6346105 25145561  2763885   625741  8001024  6724540
+[49]  1852994  5686986   563626</code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p><br> But how did we know to use <code>population</code>? Previously, by applying the function <code>str</code> to the object <code>murders</code>, we revealed the names for each of the five variables stored in this table. We can quickly access the variable names using:</p>
@@ -2134,6 +2333,9 @@ data(murders)</code></pre>
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubmFtZXMobXVyZGVycylcbmBgYCJ9 -->
 <pre class="r"><code>names(murders)</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwic3RhdGVcIiAgICAgIFwiYWJiXCIgICAgICAgIFwicmVnaW9uXCIgICAgIFwicG9wdWxhdGlvblwiIFwidG90YWxcIiAgICAgXG4ifQ== -->
+<pre><code>[1] &quot;state&quot;      &quot;abb&quot;        &quot;region&quot;     &quot;population&quot; &quot;total&quot;     </code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p><br> It is important to know that the order of the entries in <code>murders$population</code> preserves the order of the rows in our data table. This will later permit us to manipulate one variable based on the results of another. For example, we will be able to order the state names by the number of murders.</p>
@@ -2148,6 +2350,9 @@ data(murders)</code></pre>
 <pre class="r"><code>pop &lt;- murders$population
 length(pop)</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDUxXG4ifQ== -->
+<pre><code>[1] 51</code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p><br> This particular vector is <em>numeric</em> since population sizes are numbers:</p>
@@ -2156,6 +2361,9 @@ length(pop)</code></pre>
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuY2xhc3MocG9wKVxuYGBgIn0= -->
 <pre class="r"><code>class(pop)</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwibnVtZXJpY1wiXG4ifQ== -->
+<pre><code>[1] &quot;numeric&quot;</code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p><br> In a numeric vector, every entry must be a number.</p>
@@ -2165,19 +2373,29 @@ length(pop)</code></pre>
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuY2xhc3MobXVyZGVycyRzdGF0ZSlcbmBgYCJ9 -->
 <pre class="r"><code>class(murders$state)</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwiY2hhcmFjdGVyXCJcbiJ9 -->
+<pre><code>[1] &quot;character&quot;</code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p><br> As with numeric vectors, all entries in a character vector need to be a character.</p>
 <p>Another important type of vectors are <em>logical vectors</em>. These must be either <code>TRUE</code> or <code>FALSE</code>.</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxueiA8LSAzID09IDJcblxuelxuXG5jbGFzcyh6KVxuYGBgIn0= -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxueiA8LSAzID09IDJcblxuelxuYGBgIn0= -->
 <pre class="r"><code>z &lt;- 3 == 2
 
-z
-
-class(z)</code></pre>
+z</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIEZBTFNFXG4ifQ== -->
+<pre><code>[1] FALSE</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuY2xhc3MoeilcbmBgYCJ9 -->
+<pre class="r"><code>class(z)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwibG9naWNhbFwiXG4ifQ== -->
+<pre><code>[1] &quot;logical&quot;</code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p><br> Here the <code>==</code> is a relational operator asking if 3 is equal to 2. In R, if you just use one <code>=</code>, you actually assign a variable, but if you use two <code>==</code> you test for equality.</p>
@@ -2201,6 +2419,9 @@ class(z)</code></pre>
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuY2xhc3MobXVyZGVycyRyZWdpb24pXG5gYGAifQ== -->
 <pre class="r"><code>class(murders$region)</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwiZmFjdG9yXCJcbiJ9 -->
+<pre><code>[1] &quot;factor&quot;</code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p><br> It is a <em>factor</em>. Factors are useful for storing categorical data. We can see that there are only 4 regions by using the <code>levels</code> function</p>
@@ -2209,6 +2430,9 @@ class(z)</code></pre>
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGV2ZWxzKG11cmRlcnMkcmVnaW9uKVxuYGBgIn0= -->
 <pre class="r"><code>levels(murders$region)</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwiTm9ydGhlYXN0XCIgICAgIFwiU291dGhcIiAgICAgICAgIFwiTm9ydGggQ2VudHJhbFwiIFwiV2VzdFwiICAgICAgICAgXG4ifQ== -->
+<pre><code>[1] &quot;Northeast&quot;     &quot;South&quot;         &quot;North Central&quot; &quot;West&quot;         </code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p><br> In the background, R stores these <em>levels</em> as integers and keeps a map to keep track of the labels. This is more memory efficient than storing all the characters.</p>
@@ -2222,6 +2446,9 @@ value &lt;- murders$total
 region &lt;- reorder(region, value, FUN = sum)
 levels(region)</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwiTm9ydGhlYXN0XCIgICAgIFwiTm9ydGggQ2VudHJhbFwiIFwiV2VzdFwiICAgICAgICAgIFwiU291dGhcIiAgICAgICAgXG4ifQ== -->
+<pre><code>[1] &quot;Northeast&quot;     &quot;North Central&quot; &quot;West&quot;          &quot;South&quot;        </code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p><br> The new order is in agreement with the fact that the Northeast has the least murders and the South has the most. <br></p>
@@ -2232,7 +2459,7 @@ levels(region)</code></pre>
 <p><br> Data frames are a special case of <em>lists</em>. We will cover lists in more detail later, but know that they are useful because you can store any combination of different types. Below is an example of a list we created for you: <br></p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucmVjb3JkIDwtIGxpc3QoKVxuXG5yZWNvcmRbWyduYW1lJ11dIDwtICdKb2huIERvZSdcbnJlY29yZFtbJ3N0dWRlbnRfaWQnXV0gPC0gMTIzNFxucmVjb3JkW1snZ3JhZGVzJ11dIDwtIGMoJzk1JywnODInLCc5MScsJzk3JywnOTMnKVxucmVjb3JkW1snZmluYWxfZ3JhZGUnXV0gPC0gJ0EnXG5cbnJlY29yZFxuY2xhc3MocmVjb3JkKVxuYGBgIn0= -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucmVjb3JkIDwtIGxpc3QoKVxuXG5yZWNvcmRbWyduYW1lJ11dIDwtICdKb2huIERvZSdcbnJlY29yZFtbJ3N0dWRlbnRfaWQnXV0gPC0gMTIzNFxucmVjb3JkW1snZ3JhZGVzJ11dIDwtIGMoJzk1JywnODInLCc5MScsJzk3JywnOTMnKVxucmVjb3JkW1snZmluYWxfZ3JhZGUnXV0gPC0gJ0EnXG5cbnJlY29yZFxuYGBgIn0= -->
 <pre class="r"><code>record &lt;- list()
 
 record[[&#39;name&#39;]] &lt;- &#39;John Doe&#39;
@@ -2240,9 +2467,27 @@ record[[&#39;student_id&#39;]] &lt;- 1234
 record[[&#39;grades&#39;]] &lt;- c(&#39;95&#39;,&#39;82&#39;,&#39;91&#39;,&#39;97&#39;,&#39;93&#39;)
 record[[&#39;final_grade&#39;]] &lt;- &#39;A&#39;
 
-record
-class(record)</code></pre>
+record</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiJG5hbWVcblsxXSBcIkpvaG4gRG9lXCJcblxuJHN0dWRlbnRfaWRcblsxXSAxMjM0XG5cbiRncmFkZXNcblsxXSBcIjk1XCIgXCI4MlwiIFwiOTFcIiBcIjk3XCIgXCI5M1wiXG5cbiRmaW5hbF9ncmFkZVxuWzFdIFwiQVwiXG4ifQ== -->
+<pre><code>$name
+[1] &quot;John Doe&quot;
+
+$student_id
+[1] 1234
+
+$grades
+[1] &quot;95&quot; &quot;82&quot; &quot;91&quot; &quot;97&quot; &quot;93&quot;
+
+$final_grade
+[1] &quot;A&quot;</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuY2xhc3MocmVjb3JkKVxuYGBgIn0= -->
+<pre class="r"><code>class(record)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwibGlzdFwiXG4ifQ== -->
+<pre><code>[1] &quot;list&quot;</code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p><br> As with data frames, you can extract the components of a list with the accessor <code>$</code>. In fact, data frames are a type of list.</p>
@@ -2251,6 +2496,9 @@ class(record)</code></pre>
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucmVjb3JkJHN0dWRlbnRfaWRcbmBgYCJ9 -->
 <pre class="r"><code>record$student_id</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDEyMzRcbiJ9 -->
+<pre><code>[1] 1234</code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p><br> We can also use double square brackets (<code>[[</code>) like this:</p>
@@ -2259,6 +2507,9 @@ class(record)</code></pre>
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucmVjb3JkW1tcInN0dWRlbnRfaWRcIl1dXG5gYGAifQ== -->
 <pre class="r"><code>record[[&quot;student_id&quot;]]</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDEyMzRcbiJ9 -->
+<pre><code>[1] 1234</code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p><br> You should get used to the fact that in R, there are often several ways to do the same thing, such as accessing entries.</p>
@@ -2275,6 +2526,19 @@ record2[[4]] &lt;- &#39;A&#39;
 
 record2</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiW1sxXV1cblsxXSBcIkpvaG4gRG9lXCJcblxuW1syXV1cblsxXSAxMjM0XG5cbltbM11dXG5bMV0gXCI5NVwiIFwiODJcIiBcIjkxXCIgXCI5N1wiIFwiOTNcIlxuXG5bWzRdXVxuWzFdIFwiQVwiXG4ifQ== -->
+<pre><code>[[1]]
+[1] &quot;John Doe&quot;
+
+[[2]]
+[1] 1234
+
+[[3]]
+[1] &quot;95&quot; &quot;82&quot; &quot;91&quot; &quot;97&quot; &quot;93&quot;
+
+[[4]]
+[1] &quot;A&quot;</code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p><br> If a list does not have names, you cannot extract the elements with <code>$</code>, but you can still use the brackets method and instead of providing the variable name, you provide the list index, like this:</p>
@@ -2283,6 +2547,9 @@ record2</code></pre>
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucmVjb3JkMltbMV1dXG5gYGAifQ== -->
 <pre class="r"><code>record2[[1]]</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwiSm9obiBEb2VcIlxuIn0= -->
+<pre><code>[1] &quot;John Doe&quot;</code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p><br> We won’t be using lists until later, but you might encounter one in your own exploration of R. For this reason, we show you some basics here.</p>
@@ -2298,6 +2565,13 @@ record2</code></pre>
 <pre class="r"><code>mat &lt;- matrix(1:12, 4, 3)
 mat</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiICAgICBbLDFdIFssMl0gWywzXVxuWzEsXSAgICAxICAgIDUgICAgOVxuWzIsXSAgICAyICAgIDYgICAxMFxuWzMsXSAgICAzICAgIDcgICAxMVxuWzQsXSAgICA0ICAgIDggICAxMlxuIn0= -->
+<pre><code>     [,1] [,2] [,3]
+[1,]    1    5    9
+[2,]    2    6   10
+[3,]    3    7   11
+[4,]    4    8   12</code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p><br> You can access specific entries in a matrix using square brackets (<code>[</code>). If you want the second row, third column, you use:</p>
@@ -2306,6 +2580,9 @@ mat</code></pre>
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubWF0WzIsIDNdXG5gYGAifQ== -->
 <pre class="r"><code>mat[2, 3]</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDEwXG4ifQ== -->
+<pre><code>[1] 10</code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p><br> If you want the entire second row, you leave the column spot empty:</p>
@@ -2314,6 +2591,9 @@ mat</code></pre>
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubWF0WzIsIF1cbmBgYCJ9 -->
 <pre class="r"><code>mat[2, ]</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdICAyICA2IDEwXG4ifQ== -->
+<pre><code>[1]  2  6 10</code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p><br> Notice that this returns a vector, not a matrix.</p>
@@ -2323,6 +2603,9 @@ mat</code></pre>
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubWF0WywgM11cbmBgYCJ9 -->
 <pre class="r"><code>mat[, 3]</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdICA5IDEwIDExIDEyXG4ifQ== -->
+<pre><code>[1]  9 10 11 12</code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p><br> This is also a vector, not a matrix.</p>
@@ -2332,6 +2615,13 @@ mat</code></pre>
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubWF0WywgMjozXVxuYGBgIn0= -->
 <pre class="r"><code>mat[, 2:3]</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiICAgICBbLDFdIFssMl1cblsxLF0gICAgNSAgICA5XG5bMixdICAgIDYgICAxMFxuWzMsXSAgICA3ICAgMTFcbls0LF0gICAgOCAgIDEyXG4ifQ== -->
+<pre><code>     [,1] [,2]
+[1,]    5    9
+[2,]    6   10
+[3,]    7   11
+[4,]    8   12</code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p><br> You can subset both rows and columns:</p>
@@ -2353,7 +2643,7 @@ mat</code></pre>
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYXMuZGF0YS5mcmFtZShtYXQpXG5gYGAifQ== -->
 <pre class="r"><code>as.data.frame(mat)</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEuZnJhbWUiXSwibnJvdyI6NCwibmNvbCI6M30sInJkZiI6IlVrUllNd3BZQ2dBQUFBTUFCQUFDQUFNRkFBQUFBQVZWVkVZdE9BQUFCQUlBQUFBQkFBUUFDUUFBQUFGNEFBQURFd0FBQUFNQUFBQU5BQUFBQkFBQUFBRUFBQUFDQUFBQUF3QUFBQVFBQUFBTkFBQUFCQUFBQUFVQUFBQUdBQUFBQndBQUFBZ0FBQUFOQUFBQUJBQUFBQWtBQUFBS0FBQUFDd0FBQUF3QUFBUUNBQUFBQVFBRUFBa0FBQUFGYm1GdFpYTUFBQUFRQUFBQUF3QUVBQWtBQUFBQ1ZqRUFCQUFKQUFBQUFsWXlBQVFBQ1FBQUFBSldNd0FBQkFJQUFBQUJBQVFBQ1FBQUFBbHliM2N1Ym1GdFpYTUFBQUFOQUFBQUFvQUFBQUFBQUFBRUFBQUVBZ0FBQUFFQUJBQUpBQUFBQldOc1lYTnpBQUFBRUFBQUFBRUFCQUFKQUFBQUNtUmhkR0V1Wm5KaGJXVUFBQUQrQUFBRUFnQUFBQUVBQkFBSkFBQUFCMjl3ZEdsdmJuTUFBQUlUQUFBQUJRQUFBQkFBQUFBQkFBUUFDUUFBQUFGeUFBQUFFQUFBQUFFQUJBQUpBQUFBRDNWdWJtRnRaV1F0WTJoMWJtc3RNUUFBQUFvQUFBQUJBQUFBQUFBQUFBMEFBQUFCQUFBQUJBQUFBQTBBQUFBQkFBQUFBd0FBQkFJQUFBTC9BQUFBRUFBQUFBVUFCQUFKQUFBQUJtVnVaMmx1WlFBRUFBa0FBQUFGYkdGaVpXd0FCQUFKQUFBQURuSnZkMjVoYldWekxuQnlhVzUwQUFRQUNRQUFBQXB5YjNkekxuUnZkR0ZzQUFRQUNRQUFBQXBqYjJ4ekxuUnZkR0ZzQUFBQS9nQUFBUDQ9In0= -->
+<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEuZnJhbWUiXSwibnJvdyI6NCwibmNvbCI6M30sInJkZiI6IlVrUllNd3BZQ2dBQUFBTUFCQUFDQUFNRkFBQUFBQVZWVkVZdE9BQUFCQUlBQUFBQkFBUUFDUUFBQUFGNEFBQURFd0FBQUFNQUFBQU5BQUFBQkFBQUFBRUFBQUFDQUFBQUF3QUFBQVFBQUFBTkFBQUFCQUFBQUFVQUFBQUdBQUFBQndBQUFBZ0FBQUFOQUFBQUJBQUFBQWtBQUFBS0FBQUFDd0FBQUF3QUFBUUNBQUFBQVFBRUFBa0FBQUFGYm1GdFpYTUFBQUFRQUFBQUF3QUVBQWtBQUFBQ1ZqRUFCQUFKQUFBQUFsWXlBQVFBQ1FBQUFBSldNd0FBQkFJQUFBQUJBQVFBQ1FBQUFBbHliM2N1Ym1GdFpYTUFBQUFOQUFBQUFvQUFBQUFBQUFBRUFBQUVBZ0FBQUFFQUJBQUpBQUFBQldOc1lYTnpBQUFBRUFBQUFBRUFCQUFKQUFBQUNtUmhkR0V1Wm5KaGJXVUFBQUQrQUFBRUFnQUFBQUVBQkFBSkFBQUFCMjl3ZEdsdmJuTUFBQUlUQUFBQUJRQUFBQkFBQUFBQkFBUUFDUUFBQUFGeUFBQUFFQUFBQUFFQUJBQUpBQUFBRUhWdWJtRnRaV1F0WTJoMWJtc3ROVFVBQUFBS0FBQUFBUUFBQUFBQUFBQU5BQUFBQVFBQUFBUUFBQUFOQUFBQUFRQUFBQU1BQUFRQ0FBQUMvd0FBQUJBQUFBQUZBQVFBQ1FBQUFBWmxibWRwYm1VQUJBQUpBQUFBQld4aFltVnNBQVFBQ1FBQUFBNXliM2R1WVcxbGN5NXdjbWx1ZEFBRUFBa0FBQUFLY205M2N5NTBiM1JoYkFBRUFBa0FBQUFLWTI5c2N5NTBiM1JoYkFBQUFQNEFBQUQrIn0= -->
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
 {"columns":[{"label":["V1"],"name":[1],"type":["int"],"align":["right"]},{"label":["V2"],"name":[2],"type":["int"],"align":["right"]},{"label":["V3"],"name":[3],"type":["int"],"align":["right"]}],"data":[{"1":"1","2":"5","3":"9"},{"1":"2","2":"6","3":"10"},{"1":"3","2":"7","3":"11"},{"1":"4","2":"8","3":"12"}],"options":{"columns":{"min":{},"max":[10],"total":[3]},"rows":{"min":[10],"max":[10],"total":[4]},"pages":{}}}
@@ -2375,7 +2665,7 @@ murders[25, 1]</code></pre>
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubXVyZGVyc1syOjMsIF1cbmBgYCJ9 -->
 <pre class="r"><code>murders[2:3, ]</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEuZnJhbWUiXSwibnJvdyI6MiwibmNvbCI6NX0sInJkZiI6IlVrUllNd3BZQ2dBQUFBTUFCQUFDQUFNRkFBQUFBQVZWVkVZdE9BQUFCQUlBQUFBQkFBUUFDUUFBQUFGNEFBQURFd0FBQUFVQUFBQVFBQUFBQWdBRUFBa0FBQUFHUVd4aGMydGhBQVFBQ1FBQUFBZEJjbWw2YjI1aEFBQUFFQUFBQUFJQUJBQUpBQUFBQWtGTEFBUUFDUUFBQUFKQldnQUFBdzBBQUFBQ0FBQUFCQUFBQUFRQUFBUUNBQUFBQVFBRUFBa0FBQUFHYkdWMlpXeHpBQUFBRUFBQUFBUUFCQUFKQUFBQUNVNXZjblJvWldGemRBQUVBQWtBQUFBRlUyOTFkR2dBQkFBSkFBQUFEVTV2Y25Sb0lFTmxiblJ5WVd3QUJBQUpBQUFBQkZkbGMzUUFBQVFDQUFBQUFRQUVBQWtBQUFBRlkyeGhjM01BQUFBUUFBQUFBUUFFQUFrQUFBQUdabUZqZEc5eUFBQUEvZ0FBQUE0QUFBQUNRU1dzcmdBQUFBQkJXR0kwUUFBQUFBQUFBQTRBQUFBQ1FETUFBQUFBQUFCQWJRQUFBQUFBQUFBQUJBSUFBQUFCQUFRQUNRQUFBQVZ1WVcxbGN3QUFBQkFBQUFBRkFBUUFDUUFBQUFWemRHRjBaUUFFQUFrQUFBQURZV0ppQUFRQUNRQUFBQVp5WldkcGIyNEFCQUFKQUFBQUNuQnZjSFZzWVhScGIyNEFCQUFKQUFBQUJYUnZkR0ZzQUFBRUFnQUFBQUVBQkFBSkFBQUFDWEp2ZHk1dVlXMWxjd0FBQUEwQUFBQUNBQUFBQWdBQUFBTUFBQVFDQUFBRC93QUFBQkFBQUFBQkFBUUFDUUFBQUFwa1lYUmhMbVp5WVcxbEFBQUEvZ0FBQkFJQUFBQUJBQVFBQ1FBQUFBZHZjSFJwYjI1ekFBQUNFd0FBQUFVQUFBQVFBQUFBQVFBRUFBa0FBQUFCY2dBQUFCQUFBQUFCQUFRQUNRQUFBQTkxYm01aGJXVmtMV05vZFc1ckxURUFBQUFLQUFBQUFRQUFBQUVBQUFBTkFBQUFBUUFBQUFJQUFBQU5BQUFBQVFBQUFBVUFBQVFDQUFBRS93QUFBQkFBQUFBRkFBUUFDUUFBQUFabGJtZHBibVVBQkFBSkFBQUFCV3hoWW1Wc0FBUUFDUUFBQUE1eWIzZHVZVzFsY3k1d2NtbHVkQUFFQUFrQUFBQUtjbTkzY3k1MGIzUmhiQUFFQUFrQUFBQUtZMjlzY3k1MGIzUmhiQUFBQVA0QUFBRCsifQ== -->
+<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEuZnJhbWUiXSwibnJvdyI6MiwibmNvbCI6NX0sInJkZiI6IlVrUllNd3BZQ2dBQUFBTUFCQUFDQUFNRkFBQUFBQVZWVkVZdE9BQUFCQUlBQUFBQkFBUUFDUUFBQUFGNEFBQURFd0FBQUFVQUFBQVFBQUFBQWdBRUFBa0FBQUFHUVd4aGMydGhBQVFBQ1FBQUFBZEJjbWw2YjI1aEFBQUFFQUFBQUFJQUJBQUpBQUFBQWtGTEFBUUFDUUFBQUFKQldnQUFBdzBBQUFBQ0FBQUFCQUFBQUFRQUFBUUNBQUFBQVFBRUFBa0FBQUFHYkdWMlpXeHpBQUFBRUFBQUFBUUFCQUFKQUFBQUNVNXZjblJvWldGemRBQUVBQWtBQUFBRlUyOTFkR2dBQkFBSkFBQUFEVTV2Y25Sb0lFTmxiblJ5WVd3QUJBQUpBQUFBQkZkbGMzUUFBQVFDQUFBQUFRQUVBQWtBQUFBRlkyeGhjM01BQUFBUUFBQUFBUUFFQUFrQUFBQUdabUZqZEc5eUFBQUEvZ0FBQUE0QUFBQUNRU1dzcmdBQUFBQkJXR0kwUUFBQUFBQUFBQTRBQUFBQ1FETUFBQUFBQUFCQWJRQUFBQUFBQUFBQUJBSUFBQUFCQUFRQUNRQUFBQVZ1WVcxbGN3QUFBQkFBQUFBRkFBUUFDUUFBQUFWemRHRjBaUUFFQUFrQUFBQURZV0ppQUFRQUNRQUFBQVp5WldkcGIyNEFCQUFKQUFBQUNuQnZjSFZzWVhScGIyNEFCQUFKQUFBQUJYUnZkR0ZzQUFBRUFnQUFBQUVBQkFBSkFBQUFDWEp2ZHk1dVlXMWxjd0FBQUEwQUFBQUNBQUFBQWdBQUFBTUFBQVFDQUFBRC93QUFBQkFBQUFBQkFBUUFDUUFBQUFwa1lYUmhMbVp5WVcxbEFBQUEvZ0FBQkFJQUFBQUJBQVFBQ1FBQUFBZHZjSFJwYjI1ekFBQUNFd0FBQUFVQUFBQVFBQUFBQVFBRUFBa0FBQUFCY2dBQUFCQUFBQUFCQUFRQUNRQUFBQkIxYm01aGJXVmtMV05vZFc1ckxUVTJBQUFBQ2dBQUFBRUFBQUFCQUFBQURRQUFBQUVBQUFBQ0FBQUFEUUFBQUFFQUFBQUZBQUFFQWdBQUJQOEFBQUFRQUFBQUJRQUVBQWtBQUFBR1pXNW5hVzVsQUFRQUNRQUFBQVZzWVdKbGJBQUVBQWtBQUFBT2NtOTNibUZ0WlhNdWNISnBiblFBQkFBSkFBQUFDbkp2ZDNNdWRHOTBZV3dBQkFBSkFBQUFDbU52YkhNdWRHOTBZV3dBQUFEK0FBQUEvZz09In0= -->
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
 {"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["state"],"name":[1],"type":["chr"],"align":["left"]},{"label":["abb"],"name":[2],"type":["chr"],"align":["left"]},{"label":["region"],"name":[3],"type":["fctr"],"align":["left"]},{"label":["population"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["total"],"name":[5],"type":["dbl"],"align":["right"]}],"data":[{"1":"Alaska","2":"AK","3":"West","4":"710231","5":"19","_rn_":"2"},{"1":"Arizona","2":"AZ","3":"West","4":"6392017","5":"232","_rn_":"3"}],"options":{"columns":{"min":{},"max":[10],"total":[5]},"rows":{"min":[10],"max":[10],"total":[2]},"pages":{}}}
